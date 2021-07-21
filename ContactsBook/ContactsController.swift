@@ -15,6 +15,7 @@ class ContactsController: UIViewController {
         table.register(ContactCell.self, forCellReuseIdentifier: ContactCell.id)
         table.backgroundColor = .white
         table.dataSource = self
+        table.delegate = self
         return table
     }()
     var contacts = [Contact]()
@@ -57,6 +58,15 @@ class ContactsController: UIViewController {
         }
         return contacts
     }
+    
+    func callTo(number: String) {
+        guard let url = URL(string: "tel://\(number)") else { return }
+        if UIApplication.shared.canOpenURL(url) {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        }
+    }
+
+    
     // MARK: - Selectors
 }
 // MARK: - Extension TableViewDataSource
@@ -73,10 +83,19 @@ extension ContactsController: UITableViewDataSource {
         cell.configureCell(with: contact)
         if indexPath.row % 2 == 0 {
             cell.backgroundColor = .lightGray
+        }else {
+            cell.backgroundColor = .white
         }
         return cell
         
     }
 }
 
+// MARK: - Extension TableViewDelegate
+extension ContactsController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        callTo(number: contacts[indexPath.row].phone ?? "69")
+    }
+}
 
