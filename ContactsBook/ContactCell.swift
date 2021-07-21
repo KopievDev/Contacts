@@ -16,20 +16,16 @@ class ContactCell: UITableViewCell {
         label.textAlignment = .left
         label.font = UIFont.boldSystemFont(ofSize: 22)
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "Name"
-        label.layer.borderColor = UIColor.black.cgColor
-        label.layer.borderWidth = 1
+        label.text = "Ilon Mask"
         return label
     }()
     let phoneLabel: UILabel = {
         let label = UILabel()
         label.textColor = .black
-        label.textAlignment = .center
+        label.textAlignment = .right
         label.font = UIFont.boldSystemFont(ofSize: 22)
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "89999999"
-        label.layer.borderColor = UIColor.black.cgColor
-        label.layer.borderWidth = 1
         return label
     }()
     // MARK: - Lifecycle
@@ -66,6 +62,11 @@ class ContactCell: UITableViewCell {
             
         ])
         
+    }
+    
+    func configureCell(with contact: Contact) {
+        nameLabel.text = contact.name
+        phoneLabel.text = contact.phone
     }
 }
 

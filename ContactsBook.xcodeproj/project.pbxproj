@@ -15,6 +15,7 @@
 		B5B4309126A878FD001A1F84 /* ContactsBookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B4309026A878FD001A1F84 /* ContactsBookUITests.swift */; };
 		B5B4309F26A87B50001A1F84 /* ContactsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B4309E26A87B50001A1F84 /* ContactsController.swift */; };
 		B5B430A126A87C86001A1F84 /* ContactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B430A026A87C86001A1F84 /* ContactCell.swift */; };
+		B5B430A326A885BF001A1F84 /* ContactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B430A226A885BF001A1F84 /* ContactModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		B5B4309226A878FD001A1F84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5B4309E26A87B50001A1F84 /* ContactsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsController.swift; sourceTree = "<group>"; };
 		B5B430A026A87C86001A1F84 /* ContactCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactCell.swift; sourceTree = "<group>"; };
+		B5B430A226A885BF001A1F84 /* ContactModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				B5B4306E26A878FB001A1F84 /* AppDelegate.swift */,
 				B5B4307026A878FB001A1F84 /* SceneDelegate.swift */,
 				B5B4309E26A87B50001A1F84 /* ContactsController.swift */,
+				B5B430A226A885BF001A1F84 /* ContactModel.swift */,
 				B5B430A026A87C86001A1F84 /* ContactCell.swift */,
 				B5B4307726A878FD001A1F84 /* Assets.xcassets */,
 				B5B4307926A878FD001A1F84 /* LaunchScreen.storyboard */,
@@ -260,6 +263,7 @@
 				B5B430A126A87C86001A1F84 /* ContactCell.swift in Sources */,
 				B5B4306F26A878FB001A1F84 /* AppDelegate.swift in Sources */,
 				B5B4309F26A87B50001A1F84 /* ContactsController.swift in Sources */,
+				B5B430A326A885BF001A1F84 /* ContactModel.swift in Sources */,
 				B5B4307126A878FB001A1F84 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
