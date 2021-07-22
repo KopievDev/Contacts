@@ -40,16 +40,16 @@
 /* Begin PBXFileReference section */
 		B568078126A91EC3005CB1F3 /* ContactProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactProvider.swift; sourceTree = "<group>"; };
 		B568078326A91F67005CB1F3 /* Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocol.swift; sourceTree = "<group>"; };
-		B5B4306B26A878FB001A1F84 /* Contacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Contacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5B4306B26A878FB001A1F84 /* ContactsBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactsBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5B4306E26A878FB001A1F84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5B4307026A878FB001A1F84 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B5B4307726A878FD001A1F84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5B4307A26A878FD001A1F84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5B4307C26A878FD001A1F84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B5B4308126A878FD001A1F84 /* ContactsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContactsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5B4308126A878FD001A1F84 /* ContactsBookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContactsBookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5B4308526A878FD001A1F84 /* ContactsBookTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsBookTests.swift; sourceTree = "<group>"; };
 		B5B4308726A878FD001A1F84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B5B4308C26A878FD001A1F84 /* ContactsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContactsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5B4308C26A878FD001A1F84 /* ContactsBookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContactsBookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5B4309026A878FD001A1F84 /* ContactsBookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsBookUITests.swift; sourceTree = "<group>"; };
 		B5B4309226A878FD001A1F84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5B4309E26A87B50001A1F84 /* ContactsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsController.swift; sourceTree = "<group>"; };
@@ -149,9 +149,9 @@
 		B5B4306C26A878FB001A1F84 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B5B4306B26A878FB001A1F84 /* Contacts.app */,
-				B5B4308126A878FD001A1F84 /* ContactsTests.xctest */,
-				B5B4308C26A878FD001A1F84 /* ContactsUITests.xctest */,
+				B5B4306B26A878FB001A1F84 /* ContactsBook.app */,
+				B5B4308126A878FD001A1F84 /* ContactsBookTests.xctest */,
+				B5B4308C26A878FD001A1F84 /* ContactsBookUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -188,9 +188,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B5B4306A26A878FB001A1F84 /* Contacts */ = {
+		B5B4306A26A878FB001A1F84 /* ContactsBook */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B5B4309526A878FD001A1F84 /* Build configuration list for PBXNativeTarget "Contacts" */;
+			buildConfigurationList = B5B4309526A878FD001A1F84 /* Build configuration list for PBXNativeTarget "ContactsBook" */;
 			buildPhases = (
 				B5B4306726A878FB001A1F84 /* Sources */,
 				B5B4306826A878FB001A1F84 /* Frameworks */,
@@ -200,14 +200,14 @@
 			);
 			dependencies = (
 			);
-			name = Contacts;
+			name = ContactsBook;
 			productName = ContactsBook;
-			productReference = B5B4306B26A878FB001A1F84 /* Contacts.app */;
+			productReference = B5B4306B26A878FB001A1F84 /* ContactsBook.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B5B4308026A878FD001A1F84 /* ContactsTests */ = {
+		B5B4308026A878FD001A1F84 /* ContactsBookTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B5B4309826A878FD001A1F84 /* Build configuration list for PBXNativeTarget "ContactsTests" */;
+			buildConfigurationList = B5B4309826A878FD001A1F84 /* Build configuration list for PBXNativeTarget "ContactsBookTests" */;
 			buildPhases = (
 				B5B4307D26A878FD001A1F84 /* Sources */,
 				B5B4307E26A878FD001A1F84 /* Frameworks */,
@@ -218,14 +218,14 @@
 			dependencies = (
 				B5B4308326A878FD001A1F84 /* PBXTargetDependency */,
 			);
-			name = ContactsTests;
+			name = ContactsBookTests;
 			productName = ContactsBookTests;
-			productReference = B5B4308126A878FD001A1F84 /* ContactsTests.xctest */;
+			productReference = B5B4308126A878FD001A1F84 /* ContactsBookTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		B5B4308B26A878FD001A1F84 /* ContactsUITests */ = {
+		B5B4308B26A878FD001A1F84 /* ContactsBookUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B5B4309B26A878FD001A1F84 /* Build configuration list for PBXNativeTarget "ContactsUITests" */;
+			buildConfigurationList = B5B4309B26A878FD001A1F84 /* Build configuration list for PBXNativeTarget "ContactsBookUITests" */;
 			buildPhases = (
 				B5B4308826A878FD001A1F84 /* Sources */,
 				B5B4308926A878FD001A1F84 /* Frameworks */,
@@ -236,9 +236,9 @@
 			dependencies = (
 				B5B4308E26A878FD001A1F84 /* PBXTargetDependency */,
 			);
-			name = ContactsUITests;
+			name = ContactsBookUITests;
 			productName = ContactsBookUITests;
-			productReference = B5B4308C26A878FD001A1F84 /* ContactsUITests.xctest */;
+			productReference = B5B4308C26A878FD001A1F84 /* ContactsBookUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -263,7 +263,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B5B4306626A878FB001A1F84 /* Build configuration list for PBXProject "Contacts" */;
+			buildConfigurationList = B5B4306626A878FB001A1F84 /* Build configuration list for PBXProject "ContactsBook" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -276,9 +276,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B5B4306A26A878FB001A1F84 /* Contacts */,
-				B5B4308026A878FD001A1F84 /* ContactsTests */,
-				B5B4308B26A878FD001A1F84 /* ContactsUITests */,
+				B5B4306A26A878FB001A1F84 /* ContactsBook */,
+				B5B4308026A878FD001A1F84 /* ContactsBookTests */,
+				B5B4308B26A878FD001A1F84 /* ContactsBookUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -345,12 +345,12 @@
 /* Begin PBXTargetDependency section */
 		B5B4308326A878FD001A1F84 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B5B4306A26A878FB001A1F84 /* Contacts */;
+			target = B5B4306A26A878FB001A1F84 /* ContactsBook */;
 			targetProxy = B5B4308226A878FD001A1F84 /* PBXContainerItemProxy */;
 		};
 		B5B4308E26A878FD001A1F84 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B5B4306A26A878FB001A1F84 /* Contacts */;
+			target = B5B4306A26A878FB001A1F84 /* ContactsBook */;
 			targetProxy = B5B4308D26A878FD001A1F84 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -539,7 +539,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Contacts.app/Contacts";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ContactsBook.app/ContactsBook";
 			};
 			name = Debug;
 		};
@@ -561,7 +561,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Contacts.app/Contacts";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ContactsBook.app/ContactsBook";
 			};
 			name = Release;
 		};
@@ -608,7 +608,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B5B4306626A878FB001A1F84 /* Build configuration list for PBXProject "Contacts" */ = {
+		B5B4306626A878FB001A1F84 /* Build configuration list for PBXProject "ContactsBook" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B5B4309326A878FD001A1F84 /* Debug */,
@@ -617,7 +617,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B5B4309526A878FD001A1F84 /* Build configuration list for PBXNativeTarget "Contacts" */ = {
+		B5B4309526A878FD001A1F84 /* Build configuration list for PBXNativeTarget "ContactsBook" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B5B4309626A878FD001A1F84 /* Debug */,
@@ -626,7 +626,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B5B4309826A878FD001A1F84 /* Build configuration list for PBXNativeTarget "ContactsTests" */ = {
+		B5B4309826A878FD001A1F84 /* Build configuration list for PBXNativeTarget "ContactsBookTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B5B4309926A878FD001A1F84 /* Debug */,
@@ -635,7 +635,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B5B4309B26A878FD001A1F84 /* Build configuration list for PBXNativeTarget "ContactsUITests" */ = {
+		B5B4309B26A878FD001A1F84 /* Build configuration list for PBXNativeTarget "ContactsBookUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B5B4309C26A878FD001A1F84 /* Debug */,
