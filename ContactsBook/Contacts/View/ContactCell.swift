@@ -60,9 +60,7 @@ class ContactCell: UITableViewCell {
             phoneLabel.topAnchor.constraint(equalTo: nameLabel.topAnchor),
             phoneLabel.bottomAnchor.constraint(equalTo: nameLabel.bottomAnchor),
             phoneLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -10)
-            
         ])
-        
     }
     
     func configureCell(with contact: Contact) {

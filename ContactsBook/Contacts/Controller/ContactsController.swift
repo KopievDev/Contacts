@@ -89,7 +89,7 @@ extension ContactsController: UITableViewDataSource {
 extension ContactsController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        callTo(number: contacts[indexPath.row].phone ?? "69")
+        callTo(number: contacts[indexPath.row].phone ?? "911")
     }
 }
 
