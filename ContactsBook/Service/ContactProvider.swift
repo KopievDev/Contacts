@@ -20,8 +20,8 @@ class ContactProvider: ContactProviderProtocol {
             }
         }
         
-        let keys = [CNContactFormatter.descriptorForRequiredKeys(for: .fullName),CNContactPhoneNumbersKey] as Any
-        let request = CNContactFetchRequest(keysToFetch: keys as! [CNKeyDescriptor])
+        guard let keys = [CNContactFormatter.descriptorForRequiredKeys(for: .fullName),CNContactPhoneNumbersKey] as? [CNKeyDescriptor] else {return}
+        let request = CNContactFetchRequest(keysToFetch: keys)
         var contacts = [Contact]()
         do {
             try self.contactStore.enumerateContacts(with: request) {
@@ -32,7 +32,7 @@ class ContactProvider: ContactProviderProtocol {
         
         catch {
             print("unable to fetch contacts")
-            comletion( [Contact]())
+            comletion(contacts)
         }
         comletion(contacts)
     }
