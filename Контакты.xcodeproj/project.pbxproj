@@ -40,16 +40,16 @@
 /* Begin PBXFileReference section */
 		B568078126A91EC3005CB1F3 /* ContactProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactProvider.swift; sourceTree = "<group>"; };
 		B568078326A91F67005CB1F3 /* Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocol.swift; sourceTree = "<group>"; };
-		B5B4306B26A878FB001A1F84 /* ContactsBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactsBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5B4306B26A878FB001A1F84 /* Контакты.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Контакты.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5B4306E26A878FB001A1F84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5B4307026A878FB001A1F84 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B5B4307726A878FD001A1F84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5B4307A26A878FD001A1F84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5B4307C26A878FD001A1F84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B5B4308126A878FD001A1F84 /* ContactsBookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContactsBookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5B4308126A878FD001A1F84 /* КонтактыTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "КонтактыTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5B4308526A878FD001A1F84 /* ContactsBookTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsBookTests.swift; sourceTree = "<group>"; };
 		B5B4308726A878FD001A1F84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B5B4308C26A878FD001A1F84 /* ContactsBookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContactsBookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5B4308C26A878FD001A1F84 /* КонтактыUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "КонтактыUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5B4309026A878FD001A1F84 /* ContactsBookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsBookUITests.swift; sourceTree = "<group>"; };
 		B5B4309226A878FD001A1F84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5B4309E26A87B50001A1F84 /* ContactsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsController.swift; sourceTree = "<group>"; };
@@ -82,6 +82,60 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B568078526A9364D005CB1F3 /* App Layer */ = {
+			isa = PBXGroup;
+			children = (
+				B5B4307926A878FD001A1F84 /* LaunchScreen.storyboard */,
+				B5B4307726A878FD001A1F84 /* Assets.xcassets */,
+				B5B4306E26A878FB001A1F84 /* AppDelegate.swift */,
+				B5B4307026A878FB001A1F84 /* SceneDelegate.swift */,
+			);
+			path = "App Layer";
+			sourceTree = "<group>";
+		};
+		B568078626A9366D005CB1F3 /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+				B568078826A9368C005CB1F3 /* Model */,
+				B568078926A93693005CB1F3 /* View */,
+				B568078726A9367D005CB1F3 /* Controller */,
+			);
+			path = Contacts;
+			sourceTree = "<group>";
+		};
+		B568078726A9367D005CB1F3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B5B4309E26A87B50001A1F84 /* ContactsController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B568078826A9368C005CB1F3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B5B430A226A885BF001A1F84 /* ContactModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B568078926A93693005CB1F3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B5B430A026A87C86001A1F84 /* ContactCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B568078A26A936A3005CB1F3 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				B568078126A91EC3005CB1F3 /* ContactProvider.swift */,
+				B568078326A91F67005CB1F3 /* Protocol.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		B5B4306226A878FB001A1F84 = {
 			isa = PBXGroup;
 			children = (
@@ -95,9 +149,9 @@
 		B5B4306C26A878FB001A1F84 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B5B4306B26A878FB001A1F84 /* ContactsBook.app */,
-				B5B4308126A878FD001A1F84 /* ContactsBookTests.xctest */,
-				B5B4308C26A878FD001A1F84 /* ContactsBookUITests.xctest */,
+				B5B4306B26A878FB001A1F84 /* Контакты.app */,
+				B5B4308126A878FD001A1F84 /* КонтактыTests.xctest */,
+				B5B4308C26A878FD001A1F84 /* КонтактыUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -105,15 +159,9 @@
 		B5B4306D26A878FB001A1F84 /* ContactsBook */ = {
 			isa = PBXGroup;
 			children = (
-				B5B4306E26A878FB001A1F84 /* AppDelegate.swift */,
-				B5B4307026A878FB001A1F84 /* SceneDelegate.swift */,
-				B5B4309E26A87B50001A1F84 /* ContactsController.swift */,
-				B568078126A91EC3005CB1F3 /* ContactProvider.swift */,
-				B568078326A91F67005CB1F3 /* Protocol.swift */,
-				B5B430A226A885BF001A1F84 /* ContactModel.swift */,
-				B5B430A026A87C86001A1F84 /* ContactCell.swift */,
-				B5B4307726A878FD001A1F84 /* Assets.xcassets */,
-				B5B4307926A878FD001A1F84 /* LaunchScreen.storyboard */,
+				B568078526A9364D005CB1F3 /* App Layer */,
+				B568078A26A936A3005CB1F3 /* Service */,
+				B568078626A9366D005CB1F3 /* Contacts */,
 				B5B4307C26A878FD001A1F84 /* Info.plist */,
 			);
 			path = ContactsBook;
@@ -140,9 +188,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B5B4306A26A878FB001A1F84 /* ContactsBook */ = {
+		B5B4306A26A878FB001A1F84 /* Контакты */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B5B4309526A878FD001A1F84 /* Build configuration list for PBXNativeTarget "ContactsBook" */;
+			buildConfigurationList = B5B4309526A878FD001A1F84 /* Build configuration list for PBXNativeTarget "Контакты" */;
 			buildPhases = (
 				B5B4306726A878FB001A1F84 /* Sources */,
 				B5B4306826A878FB001A1F84 /* Frameworks */,
@@ -152,14 +200,14 @@
 			);
 			dependencies = (
 			);
-			name = ContactsBook;
+			name = "Контакты";
 			productName = ContactsBook;
-			productReference = B5B4306B26A878FB001A1F84 /* ContactsBook.app */;
+			productReference = B5B4306B26A878FB001A1F84 /* Контакты.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B5B4308026A878FD001A1F84 /* ContactsBookTests */ = {
+		B5B4308026A878FD001A1F84 /* КонтактыTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B5B4309826A878FD001A1F84 /* Build configuration list for PBXNativeTarget "ContactsBookTests" */;
+			buildConfigurationList = B5B4309826A878FD001A1F84 /* Build configuration list for PBXNativeTarget "КонтактыTests" */;
 			buildPhases = (
 				B5B4307D26A878FD001A1F84 /* Sources */,
 				B5B4307E26A878FD001A1F84 /* Frameworks */,
@@ -170,14 +218,14 @@
 			dependencies = (
 				B5B4308326A878FD001A1F84 /* PBXTargetDependency */,
 			);
-			name = ContactsBookTests;
+			name = "КонтактыTests";
 			productName = ContactsBookTests;
-			productReference = B5B4308126A878FD001A1F84 /* ContactsBookTests.xctest */;
+			productReference = B5B4308126A878FD001A1F84 /* КонтактыTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		B5B4308B26A878FD001A1F84 /* ContactsBookUITests */ = {
+		B5B4308B26A878FD001A1F84 /* КонтактыUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B5B4309B26A878FD001A1F84 /* Build configuration list for PBXNativeTarget "ContactsBookUITests" */;
+			buildConfigurationList = B5B4309B26A878FD001A1F84 /* Build configuration list for PBXNativeTarget "КонтактыUITests" */;
 			buildPhases = (
 				B5B4308826A878FD001A1F84 /* Sources */,
 				B5B4308926A878FD001A1F84 /* Frameworks */,
@@ -188,9 +236,9 @@
 			dependencies = (
 				B5B4308E26A878FD001A1F84 /* PBXTargetDependency */,
 			);
-			name = ContactsBookUITests;
+			name = "КонтактыUITests";
 			productName = ContactsBookUITests;
-			productReference = B5B4308C26A878FD001A1F84 /* ContactsBookUITests.xctest */;
+			productReference = B5B4308C26A878FD001A1F84 /* КонтактыUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -215,7 +263,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B5B4306626A878FB001A1F84 /* Build configuration list for PBXProject "ContactsBook" */;
+			buildConfigurationList = B5B4306626A878FB001A1F84 /* Build configuration list for PBXProject "Контакты" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -228,9 +276,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B5B4306A26A878FB001A1F84 /* ContactsBook */,
-				B5B4308026A878FD001A1F84 /* ContactsBookTests */,
-				B5B4308B26A878FD001A1F84 /* ContactsBookUITests */,
+				B5B4306A26A878FB001A1F84 /* Контакты */,
+				B5B4308026A878FD001A1F84 /* КонтактыTests */,
+				B5B4308B26A878FD001A1F84 /* КонтактыUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -297,12 +345,12 @@
 /* Begin PBXTargetDependency section */
 		B5B4308326A878FD001A1F84 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B5B4306A26A878FB001A1F84 /* ContactsBook */;
+			target = B5B4306A26A878FB001A1F84 /* Контакты */;
 			targetProxy = B5B4308226A878FD001A1F84 /* PBXContainerItemProxy */;
 		};
 		B5B4308E26A878FD001A1F84 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B5B4306A26A878FB001A1F84 /* ContactsBook */;
+			target = B5B4306A26A878FB001A1F84 /* Контакты */;
 			targetProxy = B5B4308D26A878FD001A1F84 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -491,7 +539,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ContactsBook.app/ContactsBook";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Контакты.app/Контакты";
 			};
 			name = Debug;
 		};
@@ -513,7 +561,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ContactsBook.app/ContactsBook";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Контакты.app/Контакты";
 			};
 			name = Release;
 		};
@@ -560,7 +608,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B5B4306626A878FB001A1F84 /* Build configuration list for PBXProject "ContactsBook" */ = {
+		B5B4306626A878FB001A1F84 /* Build configuration list for PBXProject "Контакты" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B5B4309326A878FD001A1F84 /* Debug */,
@@ -569,7 +617,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B5B4309526A878FD001A1F84 /* Build configuration list for PBXNativeTarget "ContactsBook" */ = {
+		B5B4309526A878FD001A1F84 /* Build configuration list for PBXNativeTarget "Контакты" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B5B4309626A878FD001A1F84 /* Debug */,
@@ -578,7 +626,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B5B4309826A878FD001A1F84 /* Build configuration list for PBXNativeTarget "ContactsBookTests" */ = {
+		B5B4309826A878FD001A1F84 /* Build configuration list for PBXNativeTarget "КонтактыTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B5B4309926A878FD001A1F84 /* Debug */,
@@ -587,7 +635,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B5B4309B26A878FD001A1F84 /* Build configuration list for PBXNativeTarget "ContactsBookUITests" */ = {
+		B5B4309B26A878FD001A1F84 /* Build configuration list for PBXNativeTarget "КонтактыUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B5B4309C26A878FD001A1F84 /* Debug */,

@@ -46,13 +46,18 @@ class ContactsController: UIViewController {
     }
     
     func callTo(number: String) {
-        guard let url = URL(string: "tel://\(number)") else {
-            print(number)
+        guard let url = URL(string: "tel://\(trimToNumber(number))") else {
             return
         }
         if UIApplication.shared.canOpenURL(url) {
             UIApplication.shared.open(url, options: [:], completionHandler: nil)
         }
+    }
+    
+    func trimToNumber(_ string:String) -> String
+    {
+        let replaced = string.filter { $0.isNumber}
+        return replaced
     }
 }
 // MARK: - Extension TableViewDataSource
