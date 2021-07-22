@@ -44,6 +44,7 @@ class ContactCell: UITableViewCell {
     func setUp() {
         addSubview(nameLabel)
         addSubview(phoneLabel)
+        layer.cornerRadius = 10
         createConstraints()
     }
     

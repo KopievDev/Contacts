@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import Contacts
 
 class ContactsController: UIViewController {
     // MARK: - Properties
@@ -16,58 +15,45 @@ class ContactsController: UIViewController {
         table.backgroundColor = .white
         table.dataSource = self
         table.delegate = self
+        table.separatorStyle = .none
         return table
     }()
     var contacts = [Contact]()
-    let contactStore = CNContactStore()
+    let contactProvider: ContactProviderProtocol!
+    
     // MARK: - Lifecycle
+    
+    init(contactProvider: ContactProviderProtocol) {
+        self.contactProvider = contactProvider
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setUp()
-        contacts = getContacts()
-
     }
     // MARK: - Helpers
     func setUp() {
         title = "Контакты"
         view.addSubview(contactsTableView)
-        
-    }
-    
-    func getContacts() -> [Contact] {
-        CNContactStore().requestAccess(for: .contacts) { succsess, error in
-            guard succsess else {
-                print("Not authorized error: \(String(describing: error))")
-                return
-            }
+        contactProvider.getContacts { contacts in
+            self.contacts = contacts
         }
-        
-        let keys = [CNContactFormatter.descriptorForRequiredKeys(for: .fullName),CNContactPhoneNumbersKey] as Any
-        let request = CNContactFetchRequest(keysToFetch: keys as! [CNKeyDescriptor])
-        var contacts = [Contact]()
-        do {
-            try self.contactStore.enumerateContacts(with: request) {
-                (contact, stop) in
-                contacts.append(Contact(name: contact.familyName, phone: contact.phoneNumbers.first?.value.stringValue))
-            }
-        }
-        
-        catch {
-            print("unable to fetch contacts")
-            return [Contact]()
-        }
-        return contacts
     }
     
     func callTo(number: String) {
-        guard let url = URL(string: "tel://\(number)") else { return }
+        guard let url = URL(string: "tel://\(number)") else {
+            print(number)
+            return
+        }
         if UIApplication.shared.canOpenURL(url) {
             UIApplication.shared.open(url, options: [:], completionHandler: nil)
         }
     }
-
-    
-    // MARK: - Selectors
 }
 // MARK: - Extension TableViewDataSource
 extension ContactsController: UITableViewDataSource {
@@ -81,13 +67,16 @@ extension ContactsController: UITableViewDataSource {
         }
         let contact = contacts[indexPath.row]
         cell.configureCell(with: contact)
+        colorFor(cell: cell, at: indexPath)
+        return cell
+        
+    }
+    func colorFor(cell: ContactCell, at indexPath: IndexPath) {
         if indexPath.row % 2 == 0 {
             cell.backgroundColor = .lightGray
         }else {
             cell.backgroundColor = .white
         }
-        return cell
-        
     }
 }
 

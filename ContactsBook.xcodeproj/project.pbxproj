@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B568078226A91EC3005CB1F3 /* ContactProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568078126A91EC3005CB1F3 /* ContactProvider.swift */; };
+		B568078426A91F67005CB1F3 /* Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568078326A91F67005CB1F3 /* Protocol.swift */; };
 		B5B4306F26A878FB001A1F84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B4306E26A878FB001A1F84 /* AppDelegate.swift */; };
 		B5B4307126A878FB001A1F84 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B4307026A878FB001A1F84 /* SceneDelegate.swift */; };
 		B5B4307826A878FD001A1F84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5B4307726A878FD001A1F84 /* Assets.xcassets */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B568078126A91EC3005CB1F3 /* ContactProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactProvider.swift; sourceTree = "<group>"; };
+		B568078326A91F67005CB1F3 /* Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocol.swift; sourceTree = "<group>"; };
 		B5B4306B26A878FB001A1F84 /* ContactsBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactsBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5B4306E26A878FB001A1F84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5B4307026A878FB001A1F84 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -104,6 +108,8 @@
 				B5B4306E26A878FB001A1F84 /* AppDelegate.swift */,
 				B5B4307026A878FB001A1F84 /* SceneDelegate.swift */,
 				B5B4309E26A87B50001A1F84 /* ContactsController.swift */,
+				B568078126A91EC3005CB1F3 /* ContactProvider.swift */,
+				B568078326A91F67005CB1F3 /* Protocol.swift */,
 				B5B430A226A885BF001A1F84 /* ContactModel.swift */,
 				B5B430A026A87C86001A1F84 /* ContactCell.swift */,
 				B5B4307726A878FD001A1F84 /* Assets.xcassets */,
@@ -261,7 +267,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5B430A126A87C86001A1F84 /* ContactCell.swift in Sources */,
+				B568078226A91EC3005CB1F3 /* ContactProvider.swift in Sources */,
 				B5B4306F26A878FB001A1F84 /* AppDelegate.swift in Sources */,
+				B568078426A91F67005CB1F3 /* Protocol.swift in Sources */,
 				B5B4309F26A87B50001A1F84 /* ContactsController.swift in Sources */,
 				B5B430A326A885BF001A1F84 /* ContactModel.swift in Sources */,
 				B5B4307126A878FB001A1F84 /* SceneDelegate.swift in Sources */,
