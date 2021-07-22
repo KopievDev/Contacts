@@ -25,8 +25,8 @@
                                     <constraint firstAttribute="width" constant="150" id="E5w-4m-Gwf"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Контакты" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hB7-y8-pwC">
-                                <rect key="frame" x="157" y="546" width="101" height="27"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Контакты" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hB7-y8-pwC">
+                                <rect key="frame" x="20" y="546" width="374" height="27"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -35,10 +35,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="hB7-y8-pwC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="157" id="L9e-Fa-q47"/>
+                            <constraint firstItem="hB7-y8-pwC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="L9e-Fa-q47"/>
                             <constraint firstItem="aAN-EU-nOC" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="S9K-TJ-1Vx"/>
                             <constraint firstItem="aAN-EU-nOC" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="iXx-pb-nmB"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hB7-y8-pwC" secondAttribute="trailing" constant="156" id="oRb-Co-fZc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hB7-y8-pwC" secondAttribute="trailing" constant="20" id="oRb-Co-fZc"/>
                             <constraint firstItem="hB7-y8-pwC" firstAttribute="firstBaseline" secondItem="aAN-EU-nOC" secondAttribute="baseline" constant="74" id="pGb-Tl-JBl"/>
                         </constraints>
                     </view>
